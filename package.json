@@ -1,0 +1,25 @@
+{
+  "name": "jio-message-bus",
+  "version": "0.0.1-beta",
+  "description": "simple node.js message bus using mosca",
+  "main": "index.js",
+  "private" : true,
+  "dependencies": {
+    "mosca": "^0.30.5",
+    "mqtt": "^1.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonniedarko/jio-message-bus"
+  },
+  "author": "jonniedarko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonniedarko/jio-message-bus/issues"
+  },
+  "homepage": "https://github.com/jonniedarko/jio-message-bus"
+}

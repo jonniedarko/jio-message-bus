@@ -16,17 +16,6 @@ var moscaSettings = {
 
 var server = new mosca.Server(moscaSettings);   //here we start mosca
 server.on('ready', setup);  //on init it fires up setup()
-/*
- var message = {
- topic: '/hello/world',
- payload: 'abcde', // or a Buffer
- qos: 0, // 0, 1, or 2
- retain: false // or true
- };
-
- server.publish(message, function() {
- console.log('done!');
- });*/
 
 // fired when the mqtt server is ready
 function setup() {
@@ -81,7 +70,7 @@ server.on('message', function(topic, message) {
 				name : 'john smith',
 				email: 'j@smith.com'
 			}
-		}
+		};
 		server.publish(returnTopic, JSON.stringify(jsonMessage));
 	}
 });
